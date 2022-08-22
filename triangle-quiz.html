@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Fun With Triangles | Neha Keskar</title>
+</head>
+
+<body>
+    <div class="row bg-light p-md-3 p-sm-1 mx-0 navone">
+        <div class="col-md-4 col-sm-12 col-align-items-center">
+            <a class="navbar-brand" href="index.html">Fun With Triangles</a>
+        </div>
+        <div class="col-md-8 col-sm-12 text-md-end nav-elements">
+            <a href="index.html" class="mx-3">Is This A Triangle?</a>
+            <a href="triangle-quiz.html" class="mx-3">Triangle Quiz</a>
+            <a href="hypotenuse.html" class="mx-3">Hypotenuse Calculator</a>
+            <a href="area.html" class="mx-3">Area</a>
+        </div>
+
+    </div>
+    <div class="main-con mx-auto">
+        <h2><strong>
+                Triangle Quiz</strong>
+        </h2>
+
+        <form class="quiz-form text-start">
+            <div class="question-container my-3">
+                <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
+                <label><input type="radio" name="question1" value="45°" />45°</label>
+                <label><input type="radio" name="question1" value="60°" />60°</label>
+                <label><input type="radio" name="question1" value="90°" />90°</label>
+            </div>
+            <div class="question-container my-3">
+                <p>If a triangle has an angle of 90 degrees, what is it called?</p>
+                <label><input type="radio" name="question2" value="acute" />acute </label>
+                <label><input type="radio" name="question2" value="obtuse" />obtuse</label>
+                <label><input type="radio" name="question2" value="right-angled" />right angled</label>
+            </div>
+            <div class="question-container my-3">
+                <p> If a triangle has all 3 sides equal, what is it called?</p>
+                <input type="radio" name="question3" value="equilateral">equilateral</input>
+                <input type="radio" name="question3" value="isosceles">isosceles</input>
+                <input type="radio" name="question3" value="scalene">scalene</input>
+            </div>
+
+            <div class="question-container my-3">
+                <p> If a triangle has all 3 sides of different length, what is it called?</p>
+                <input type="radio" name="question4" value="equilateral">equilateral</input>
+                <input type="radio" name="question4" value="isosceles">isosceles</input>
+                <input type="radio" name="question4" value="scalene">scalene</input>
+            </div>
+
+            <div class="question-container my-2">
+                <p> If a triangle has 2 sides equal, what is it called?</p>
+                <input type="radio" name="question5" value="equilateral">equilateral</input>
+                <input type="radio" name="question5" value="isosceles">isosceles</input>
+                <input type="radio" name="question5" value="scalene">scalene</input>
+            </div>
+
+        </form>
+        <button id="submit-answer-btn" class="btn btn-primary my-2">Submit</button>
+        <div id="output"></div>
+    </div>
+    <script src="quiz.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+
+
+
+</body>
+
+</html>
