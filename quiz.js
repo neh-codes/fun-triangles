@@ -8,6 +8,11 @@ const correctAnswers = [
   "equilateral",
   "scalene",
   "isosceles",
+  "5",
+  "35cm2",
+  "a2",
+  "perimeter",
+  "4:5",
 ];
 
 function calculateScore() {
@@ -20,7 +25,7 @@ function calculateScore() {
     }
     index = index + 1;
   }
-  outputEl.innerText = "Your Score is " + score + "/5";
+  outputEl.innerText = "Your Score is " + score + "/10";
 }
 
 submitAnswerBtn.addEventListener("click", calculateScore);
